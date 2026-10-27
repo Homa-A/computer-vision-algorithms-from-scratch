@@ -1,0 +1,3 @@
+window,length,coherent_gain,enbw_bins,first_null_full_width_bins,highest_sidelobe_db
+rectangular,256,1.0,1.0,2.0,-13.261029168676865
+hann,256,0.5,1.5,4.0,-31.46762681116984

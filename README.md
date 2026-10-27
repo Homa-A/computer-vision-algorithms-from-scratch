@@ -2,7 +2,7 @@
 
 A growing portfolio of **digital image processing and computer vision algorithms implemented primarily from scratch with NumPy**. The repository is organized by assignment and independent chapter lab so new experiments can be added without turning the project into a collection of unrelated `Q1/Q2/...` folders.
 
-The core algorithms are implemented directly; Pillow is used for image I/O, Matplotlib for visualization, and `scikit-image` and NumPy FFT provide independent numerical references in selected tests and experiments.
+The core algorithms are implemented directly; Pillow is used for image I/O, Matplotlib for visualization, and `scikit-image` and NumPy FFT provide independent numerical references in selected tests and experiments. The Fourier Spectrum Explorer uses NumPy FFT for practical-sized spectral experiments, with Lab 01 manual transforms retained for small mathematical verification cases.
 
 ## Highlights
 
@@ -14,6 +14,7 @@ The core algorithms are implemented directly; Pillow is used for image I/O, Matp
 | Noise robustness | Gaussian-noise attack and BER analysis | PVD preserves more hidden bits than LSB at variance `1` and `10` |
 | Circular Hough | Circle detection, radius/area estimation, hole classification | `16` circular parts detected; `4` classified as having holes |
 | Image denoising | Gaussian noise, 3x3 mean filter, Non-Local Means | NLM preserves texture and slightly improves PSNR on the tested Baboon image |
+| Fourier spectrum explorer | Magnitude/phase reconstruction and swaps, circular translation, leakage, rectangular/Hann windows | Quantitative symmetry/shift/leakage checks and reproducible synthetic figures |
 | Fourier transform | Manual 1D/2D DFT and inverse, row-column separability, analytical pytest checks | Six synthetic experiments with reconstruction, spectra, and runtime comparisons |
 | Edge detection | Canny, Sobel, Prewitt, Roberts | Canny parameter sweep plus stage-by-stage implementation |
 
@@ -64,7 +65,8 @@ computer-vision-fundamentals-lab/
 │       └── 03-edge-detection/
 ├── chapter-labs/
 │   └── chapter-04-frequency-domain/
-│       └── 01-fourier-transform/
+│       ├── 01-fourier-transform/
+│       └── 02-fourier-spectrum-explorer/
 ├── docs/
 ├── scripts/
 ├── .github/workflows/
@@ -102,7 +104,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and the Fourier lab pytest suite. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate`.
+By default this runs every assignment test suite against the committed outputs and both Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate`.
 
 ## Run an experiment directly
 
@@ -124,6 +126,10 @@ See the assignment-level READMEs for the purpose, algorithms, and main findings 
 ## Independent chapter labs
 
 - **[Chapter 04 · Lab 01: Fourier Transform From Scratch](chapter-labs/chapter-04-frequency-domain/01-fourier-transform/README.md)** — manual forward/inverse transforms, mathematical validation, centered spectra, reconstruction, and performance measurements. See its README for regeneration commands and measured results.
+
+- **[Chapter 04 · Lab 02: Fourier Spectrum Explorer](chapter-labs/chapter-04-frequency-domain/02-fourier-spectrum-explorer/README.md)** — magnitude/phase swaps, circular shifts, leakage, and rectangular/Hann window comparisons with quantitative measurements.
+
+![Fourier spectrum explorer: reconstruction](chapter-labs/chapter-04-frequency-domain/02-fourier-spectrum-explorer/output/reconstruction_even.png)
 
 ## Adding future assignments
 

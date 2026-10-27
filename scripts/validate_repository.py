@@ -41,11 +41,16 @@ def main() -> int:
             run([sys.executable, demo], workdir)
         print("[test] test.py")
         run([sys.executable, "test.py"], workdir)
-    lab_dir = ROOT / "chapter-labs/chapter-04-frequency-domain/01-fourier-transform"
-    print("\nChapter 04 / Lab 01 / Fourier transform", flush=True)
-    if args.regenerate:
-        run([sys.executable, "experiment.py"], lab_dir)
-    run([sys.executable, "-m", "pytest", "-q", "tests"], lab_dir)
+    chapter_dir = ROOT / "chapter-labs/chapter-04-frequency-domain"
+    for title, directory in [
+        ("Lab 01 / Fourier transform", "01-fourier-transform"),
+        ("Lab 02 / Fourier spectrum explorer", "02-fourier-spectrum-explorer"),
+    ]:
+        lab_dir = chapter_dir / directory
+        print(f"\nChapter 04 / {title}", flush=True)
+        if args.regenerate:
+            run([sys.executable, "experiment.py"], lab_dir)
+        run([sys.executable, "-m", "pytest", "-q", "tests"], lab_dir)
     print("\nAll repository validations passed.")
     return 0
 

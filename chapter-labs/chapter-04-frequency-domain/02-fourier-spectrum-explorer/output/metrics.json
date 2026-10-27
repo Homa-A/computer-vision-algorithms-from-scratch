@@ -1,0 +1,245 @@
+{
+  "python": "3.14.8",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "normalization": "backward",
+  "pixel_spacing": 1,
+  "phase_relative_tolerance": 1e-12,
+  "determinism": "Fixed analytical parameters; no random inputs.",
+  "shapes": [
+    [
+      128,
+      160
+    ],
+    [
+      129,
+      161
+    ]
+  ],
+  "shift_rows_columns": [
+    19,
+    -27
+  ],
+  "window_definition": "Periodic Hann: 0.5 - 0.5*cos(2*pi*n/N)",
+  "response_length": 256,
+  "response_oversampling": 128,
+  "display_db_floor": -120,
+  "zero_spectrum_all_variants_zero": true,
+  "manual_lab01_check": {
+    "shape": [
+      3,
+      5
+    ],
+    "max_complex_error": 6.252832847199451e-15
+  },
+  "reconstruction": [
+    {
+      "shape": [
+        128,
+        160
+      ],
+      "image": "A",
+      "full_max_complex_error": 7.237679908545274e-16,
+      "full_mse": 2.0497390478080663e-32,
+      "phase_supported_bins": 20480,
+      "total_bins": 20480,
+      "hermitian_error": 2.5421149729252077e-13,
+      "full_imaginary_max": 3.3185620006701785e-16,
+      "magnitude_only_imaginary_max": 4.926614671774132e-16,
+      "phase_only_imaginary_max": 5.2629419452509354e-17
+    },
+    {
+      "shape": [
+        128,
+        160
+      ],
+      "image": "B",
+      "full_max_complex_error": 5.104668882122862e-16,
+      "full_mse": 1.1890498855238868e-32,
+      "phase_supported_bins": 20480,
+      "total_bins": 20480,
+      "hermitian_error": 1.2710574864626038e-13,
+      "full_imaginary_max": 3.2463025633555765e-16,
+      "magnitude_only_imaginary_max": 4.458574759109923e-16,
+      "phase_only_imaginary_max": 5.305675873114897e-17
+    },
+    {
+      "shape": [
+        129,
+        161
+      ],
+      "image": "A",
+      "full_max_complex_error": 2.02037266522187e-15,
+      "full_mse": 3.2956336496832196e-32,
+      "phase_supported_bins": 20769,
+      "total_bins": 20769,
+      "hermitian_error": 3.06111178766429e-13,
+      "full_imaginary_max": 4.044805657985358e-16,
+      "magnitude_only_imaginary_max": 4.142196393693975e-16,
+      "phase_only_imaginary_max": 5.996487560398342e-17
+    },
+    {
+      "shape": [
+        129,
+        161
+      ],
+      "image": "B",
+      "full_max_complex_error": 1.211256371479951e-15,
+      "full_mse": 1.8116081542275935e-32,
+      "phase_supported_bins": 20769,
+      "total_bins": 20769,
+      "hermitian_error": 2.428351918216984e-13,
+      "full_imaginary_max": 5.284088808258888e-16,
+      "magnitude_only_imaginary_max": 3.6507342409124294e-16,
+      "phase_only_imaginary_max": 5.559849073935921e-17
+    }
+  ],
+  "swaps": [
+    {
+      "shape": [
+        128,
+        160
+      ],
+      "magnitude_donor": "A",
+      "phase_donor": "B",
+      "correlation_with_A": 0.07583111331979772,
+      "correlation_with_B": 0.7352342044067471,
+      "magnitude_relative_l2_error": 1.1571230813468649e-16,
+      "autocorrelation_relative_l2_error": 2.630898654024637e-16,
+      "magnitude_energy_removed_fraction": 0.0,
+      "hermitian_error": 2.945417122913149e-12,
+      "imaginary_max": 7.778022768221106e-16
+    },
+    {
+      "shape": [
+        128,
+        160
+      ],
+      "magnitude_donor": "B",
+      "phase_donor": "A",
+      "correlation_with_A": 0.7352342044067469,
+      "correlation_with_B": -0.0401904194370002,
+      "magnitude_relative_l2_error": 9.377366256655232e-17,
+      "autocorrelation_relative_l2_error": 1.8502598232003093e-16,
+      "magnitude_energy_removed_fraction": 0.0,
+      "hermitian_error": 6.778617033982966e-13,
+      "imaginary_max": 4.3818422806877057e-16
+    },
+    {
+      "shape": [
+        129,
+        161
+      ],
+      "magnitude_donor": "A",
+      "phase_donor": "B",
+      "correlation_with_A": 0.06636782750300747,
+      "correlation_with_B": 0.7358269079574989,
+      "magnitude_relative_l2_error": 1.2260057092349509e-16,
+      "autocorrelation_relative_l2_error": 4.289366638441895e-16,
+      "magnitude_energy_removed_fraction": 0.0,
+      "hermitian_error": 2.015866844435365e-12,
+      "imaginary_max": 8.430722881351171e-16
+    },
+    {
+      "shape": [
+        129,
+        161
+      ],
+      "magnitude_donor": "B",
+      "phase_donor": "A",
+      "correlation_with_A": 0.735826907957499,
+      "correlation_with_B": 0.005544674019430711,
+      "magnitude_relative_l2_error": 1.050726528374366e-16,
+      "autocorrelation_relative_l2_error": 2.2765696946054485e-16,
+      "magnitude_energy_removed_fraction": 0.0,
+      "hermitian_error": 3.7330333393990635e-12,
+      "imaginary_max": 7.101996842016267e-16
+    }
+  ],
+  "translation": [
+    {
+      "shape": [
+        128,
+        160
+      ],
+      "shift_rows_columns": [
+        19,
+        -27
+      ],
+      "spectrum_max_complex_error": 2.530370281205547e-12,
+      "spectrum_relative_l2_error": 2.8717299946956285e-15,
+      "magnitude_max_abs_difference": 2.2737367544323206e-13,
+      "reconstruction_max_complex_error": 4.219494299500915e-15,
+      "hermitian_error": 2.12160077255198e-12
+    },
+    {
+      "shape": [
+        129,
+        161
+      ],
+      "shift_rows_columns": [
+        19,
+        -27
+      ],
+      "spectrum_max_complex_error": 6.406468066628714e-12,
+      "spectrum_relative_l2_error": 6.4719494756357034e-15,
+      "magnitude_max_abs_difference": 4.547473508864641e-13,
+      "reconstruction_max_complex_error": 1.6653865941922888e-14,
+      "hermitian_error": 3.2155493553843715e-13
+    }
+  ],
+  "leakage": [
+    {
+      "cycles": 17.0,
+      "window": "rectangular",
+      "outside_nearest_pair_fraction": 9.015976902727404e-30,
+      "outside_fixed_five_bin_bands_fraction": 8.21066274104087e-30,
+      "coherent_gain": 1.0
+    },
+    {
+      "cycles": 17.0,
+      "window": "hann",
+      "outside_nearest_pair_fraction": 0.33333333333333326,
+      "outside_fixed_five_bin_bands_fraction": 6.859982992294085e-30,
+      "coherent_gain": 0.5
+    },
+    {
+      "cycles": 17.35,
+      "window": "rectangular",
+      "outside_nearest_pair_fraction": 0.34113849118244044,
+      "outside_fixed_five_bin_bands_fraction": 0.06364280411615313,
+      "coherent_gain": 1.0
+    },
+    {
+      "cycles": 17.35,
+      "window": "hann",
+      "outside_nearest_pair_fraction": 0.4314821048124079,
+      "outside_fixed_five_bin_bands_fraction": 0.000304397107697116,
+      "coherent_gain": 0.5
+    }
+  ],
+  "windows": [
+    {
+      "window": "rectangular",
+      "length": 256,
+      "coherent_gain": 1.0,
+      "enbw_bins": 1.0,
+      "first_null_full_width_bins": 2.0,
+      "highest_sidelobe_db": -13.261029168676865
+    },
+    {
+      "window": "hann",
+      "length": 256,
+      "coherent_gain": 0.5,
+      "enbw_bins": 1.5,
+      "first_null_full_width_bins": 4.0,
+      "highest_sidelobe_db": -31.46762681116984
+    }
+  ],
+  "two_dimensional_window": {
+    "coherent_gain_2d": 0.25,
+    "inverse_vs_windowed_max_complex_error": 5.908875569598108e-16,
+    "windowed_vs_original_relative_l2": 0.6905251549776873
+  }
+}
