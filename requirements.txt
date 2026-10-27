@@ -3,3 +3,4 @@ Pillow==12.3.0
 matplotlib==3.10.8
 scikit-image==0.26.0
 scipy==1.17.0
+pytest==8.4.2

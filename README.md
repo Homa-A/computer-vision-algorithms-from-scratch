@@ -1,8 +1,8 @@
 # Computer Vision Fundamentals Lab
 
-A growing portfolio of **digital image processing and computer vision algorithms implemented primarily from scratch with NumPy**. The repository is organized by assignment so new coursework can be added without turning the project into a collection of unrelated `Q1/Q2/...` folders.
+A growing portfolio of **digital image processing and computer vision algorithms implemented primarily from scratch with NumPy**. The repository is organized by assignment and independent chapter lab so new experiments can be added without turning the project into a collection of unrelated `Q1/Q2/...` folders.
 
-The core algorithms are implemented directly; Pillow is used for image I/O, Matplotlib for visualization, and `scikit-image` is used only in selected tests as an independent numerical reference.
+The core algorithms are implemented directly; Pillow is used for image I/O, Matplotlib for visualization, and `scikit-image` and NumPy FFT provide independent numerical references in selected tests and experiments.
 
 ## Highlights
 
@@ -14,6 +14,7 @@ The core algorithms are implemented directly; Pillow is used for image I/O, Matp
 | Noise robustness | Gaussian-noise attack and BER analysis | PVD preserves more hidden bits than LSB at variance `1` and `10` |
 | Circular Hough | Circle detection, radius/area estimation, hole classification | `16` circular parts detected; `4` classified as having holes |
 | Image denoising | Gaussian noise, 3x3 mean filter, Non-Local Means | NLM preserves texture and slightly improves PSNR on the tested Baboon image |
+| Fourier transform | Manual 1D/2D DFT and inverse, row-column separability, analytical pytest checks | Six synthetic experiments with reconstruction, spectra, and runtime comparisons |
 | Edge detection | Canny, Sobel, Prewitt, Roberts | Canny parameter sweep plus stage-by-stage implementation |
 
 ## Selected results
@@ -40,6 +41,12 @@ The core algorithms are implemented directly; Pillow is used for image I/O, Matp
 
 ![Edge-method comparison](assignments/assignment-02/03-edge-detection/output/edge_methods_comparison.png)
 
+### Fourier transform from scratch
+
+[Chapter 04 · Lab 01](chapter-labs/chapter-04-frequency-domain/01-fourier-transform/README.md) adds direct and separable Fourier transforms with complex-input support, NumPy reference comparisons, and reproducible synthetic experiments.
+
+![Fourier diagnostics for synthetic geometric shapes](chapter-labs/chapter-04-frequency-domain/01-fourier-transform/output/geometric_shapes.png)
+
 ## Repository structure
 
 ```text
@@ -55,6 +62,9 @@ computer-vision-fundamentals-lab/
 │       ├── 01-circular-hough/
 │       ├── 02-nlm-denoising/
 │       └── 03-edge-detection/
+├── chapter-labs/
+│   └── chapter-04-frequency-domain/
+│       └── 01-fourier-transform/
 ├── docs/
 ├── scripts/
 ├── .github/workflows/
@@ -78,13 +88,21 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
+For Windows PowerShell, use this activation command instead of `source`:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+Run this from the repository root after creating `.venv`. If PowerShell execution policy blocks activation, use `.\.venv\Scripts\python.exe` in place of `python` for the commands below; activation is optional.
+
 ## Validate the whole repository
 
 ```bash
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate`.
+By default this runs every assignment test suite against the committed outputs and the Fourier lab pytest suite. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate`.
 
 ## Run an experiment directly
 
@@ -102,6 +120,10 @@ See the assignment-level READMEs for the purpose, algorithms, and main findings 
 
 - **[Assignment 01](assignments/assignment-01/README.md)** - interpolation, resizing, steganography, MSE/PSNR, and Gaussian-noise robustness.
 - **[Assignment 02](assignments/assignment-02/README.md)** - Circular Hough Transform, NLM denoising, and edge detection.
+
+## Independent chapter labs
+
+- **[Chapter 04 · Lab 01: Fourier Transform From Scratch](chapter-labs/chapter-04-frequency-domain/01-fourier-transform/README.md)** — manual forward/inverse transforms, mathematical validation, centered spectra, reconstruction, and performance measurements. See its README for regeneration commands and measured results.
 
 ## Adding future assignments
 

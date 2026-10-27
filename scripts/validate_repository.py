@@ -24,7 +24,7 @@ def run(command: list[str], cwd: Path) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Validate every coursework experiment.")
+    parser = argparse.ArgumentParser(description="Validate every assignment and independent chapter lab.")
     parser.add_argument(
         "--regenerate",
         action="store_true",
@@ -41,6 +41,11 @@ def main() -> int:
             run([sys.executable, demo], workdir)
         print("[test] test.py")
         run([sys.executable, "test.py"], workdir)
+    lab_dir = ROOT / "chapter-labs/chapter-04-frequency-domain/01-fourier-transform"
+    print("\nChapter 04 / Lab 01 / Fourier transform", flush=True)
+    if args.regenerate:
+        run([sys.executable, "experiment.py"], lab_dir)
+    run([sys.executable, "-m", "pytest", "-q", "tests"], lab_dir)
     print("\nAll repository validations passed.")
     return 0
 
