@@ -16,6 +16,7 @@ The core algorithms are implemented directly; Pillow is used for image I/O, Matp
 | Image denoising | Gaussian noise, 3x3 mean filter, Non-Local Means | NLM preserves texture and slightly improves PSNR on the tested Baboon image |
 | Fourier spectrum explorer | Magnitude/phase reconstruction and swaps, circular translation, leakage, rectangular/Hann windows | Quantitative symmetry/shift/leakage checks and reproducible synthetic figures |
 | Fourier transform | Manual 1D/2D DFT and inverse, row-column separability, analytical pytest checks | Six synthetic experiments with reconstruction, spectra, and runtime comparisons |
+| Fourier properties | Independent spatial convolution, correlation and finite differences; exact discrete scaling and rotations | Padding, kernel orientation and lag conventions verified quantitatively |
 | Edge detection | Canny, Sobel, Prewitt, Roberts | Canny parameter sweep plus stage-by-stage implementation |
 
 ## Selected results
@@ -66,7 +67,8 @@ computer-vision-fundamentals-lab/
 ├── chapter-labs/
 │   └── chapter-04-frequency-domain/
 │       ├── 01-fourier-transform/
-│       └── 02-fourier-spectrum-explorer/
+│       ├── 02-fourier-spectrum-explorer/
+│       └── 03-fourier-properties/
 ├── docs/
 ├── scripts/
 ├── .github/workflows/
@@ -104,7 +106,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and both Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate`.
+By default this runs every assignment test suite against the committed outputs and all three Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate`.
 
 ## Run an experiment directly
 
@@ -130,6 +132,10 @@ See the assignment-level READMEs for the purpose, algorithms, and main findings 
 - **[Chapter 04 · Lab 02: Fourier Spectrum Explorer](chapter-labs/chapter-04-frequency-domain/02-fourier-spectrum-explorer/README.md)** — magnitude/phase swaps, circular shifts, leakage, and rectangular/Hann window comparisons with quantitative measurements.
 
 ![Fourier spectrum explorer: reconstruction](chapter-labs/chapter-04-frequency-domain/02-fourier-spectrum-explorer/output/reconstruction_even.png)
+
+**[Chapter 04 · Lab 03: Fourier Transform Properties](chapter-labs/chapter-04-frequency-domain/03-fourier-properties/README.md)** studies convolution and correlation conventions, exact periodic derivative responses, discrete scaling and quarter turns, with independent spatial references and deterministic experiments.
+
+![Linear versus circular convolution and minimum padding](chapter-labs/chapter-04-frequency-domain/03-fourier-properties/output/linear_vs_circular.png)
 
 ## Adding future assignments
 

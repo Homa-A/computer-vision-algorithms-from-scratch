@@ -45,6 +45,7 @@ def main() -> int:
     for title, directory in [
         ("Lab 01 / Fourier transform", "01-fourier-transform"),
         ("Lab 02 / Fourier spectrum explorer", "02-fourier-spectrum-explorer"),
+        ("Lab 03 / Fourier properties", "03-fourier-properties"),
     ]:
         lab_dir = chapter_dir / directory
         print(f"\nChapter 04 / {title}", flush=True)

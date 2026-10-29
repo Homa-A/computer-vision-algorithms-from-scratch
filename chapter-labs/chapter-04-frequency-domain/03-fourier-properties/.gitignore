@@ -1,0 +1,2 @@
+# Hosted pytest may fall back to a local temporary directory.
+pytest-of-root/
