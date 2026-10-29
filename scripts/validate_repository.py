@@ -46,6 +46,7 @@ def main() -> int:
         ("Lab 01 / Fourier transform", "01-fourier-transform"),
         ("Lab 02 / Fourier spectrum explorer", "02-fourier-spectrum-explorer"),
         ("Lab 03 / Fourier properties", "03-fourier-properties"),
+        ("Lab 04 / Low-pass filters", "04-low-pass-filters"),
     ]:
         lab_dir = chapter_dir / directory
         print(f"\nChapter 04 / {title}", flush=True)

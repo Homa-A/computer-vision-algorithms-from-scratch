@@ -17,6 +17,7 @@ The core algorithms are implemented directly; Pillow is used for image I/O, Matp
 | Fourier spectrum explorer | Magnitude/phase reconstruction and swaps, circular translation, leakage, rectangular/Hann windows | Quantitative symmetry/shift/leakage checks and reproducible synthetic figures |
 | Fourier transform | Manual 1D/2D DFT and inverse, row-column separability, analytical pytest checks | Six synthetic experiments with reconstruction, spectra, and runtime comparisons |
 | Fourier properties | Independent spatial convolution, correlation and finite differences; exact discrete scaling and rotations | Padding, kernel orientation and lag conventions verified quantitatively |
+| Frequency-domain low-pass filters | Ideal, Butterworth and Gaussian responses with explicit cutoff units and padding | Quantified smoothing, edge ringing, matched responses and boundary effects |
 | Edge detection | Canny, Sobel, Prewitt, Roberts | Canny parameter sweep plus stage-by-stage implementation |
 
 ## Selected results
@@ -68,7 +69,8 @@ computer-vision-fundamentals-lab/
 │   └── chapter-04-frequency-domain/
 │       ├── 01-fourier-transform/
 │       ├── 02-fourier-spectrum-explorer/
-│       └── 03-fourier-properties/
+│       ├── 03-fourier-properties/
+│       └── 04-low-pass-filters/
 ├── docs/
 ├── scripts/
 ├── .github/workflows/
@@ -106,7 +108,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and all three Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate`.
+By default this runs every assignment test suite against the committed outputs and all four Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
 
 ## Run an experiment directly
 
@@ -137,8 +139,11 @@ See the assignment-level READMEs for the purpose, algorithms, and main findings 
 
 ![Linear versus circular convolution and minimum padding](chapter-labs/chapter-04-frequency-domain/03-fourier-properties/output/linear_vs_circular.png)
 
-## Adding future assignments
+**[Chapter 04 · Lab 04: Frequency-Domain Low-Pass Filters](chapter-labs/chapter-04-frequency-domain/04-low-pass-filters/README.md)** compares ideal, Butterworth and Gaussian filters, with matched-response comparisons, measured ringing, explicit padding and reproducible synthetic inputs.
 
+![Low-pass frequency responses](chapter-labs/chapter-04-frequency-domain/04-low-pass-filters/output/transfer_functions.png)
+
+## Adding future assignments
 The repository is intentionally designed to grow. Add a new folder such as `assignments/assignment-03/`, give its questions descriptive names, add a short assignment README, and register its demos/tests in `scripts/validate_repository.py`.
 
 A concrete template is available in **[docs/ADDING_ASSIGNMENTS.md](docs/ADDING_ASSIGNMENTS.md)**.

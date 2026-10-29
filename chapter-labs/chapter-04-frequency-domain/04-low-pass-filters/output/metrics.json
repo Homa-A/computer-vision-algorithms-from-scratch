@@ -1,0 +1,562 @@
+{
+  "metadata": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "normalization": "backward",
+    "cutoff_units": "cycles/pixel",
+    "square_pixels": true,
+    "seed": 404,
+    "noise_sigma": 0.12,
+    "shape": [
+      128,
+      160
+    ],
+    "cutoff_convention": "native; matched radial panel uses amplitude 1/sqrt(2) at .10 cycles/pixel",
+    "image_padding": [
+      0,
+      0
+    ],
+    "step_shape": [
+      1,
+      512
+    ],
+    "step_edge_index": 256,
+    "benchmark_repeats": 7,
+    "figure_dpi": 180,
+    "figures": [
+      "transfer_functions.png",
+      "radial_responses.png",
+      "synthetic_gallery.png",
+      "cutoff_effects.png",
+      "butterworth_orders.png",
+      "edge_ringing.png",
+      "gaussian_spatial.png",
+      "boundary_effects.png",
+      "quantitative_comparison.png",
+      "runtime_comparison.png"
+    ],
+    "array_keys": [
+      "boundary_1",
+      "boundary_2",
+      "boundary_3",
+      "boundary_input",
+      "clean",
+      "filtered_butterworth",
+      "filtered_gaussian",
+      "filtered_ideal",
+      "gaussian_exact_0",
+      "gaussian_exact_1",
+      "gaussian_sampled_0",
+      "gaussian_sampled_1",
+      "input_constant",
+      "input_impulse",
+      "input_mixed",
+      "input_rectangle",
+      "input_step",
+      "input_texture",
+      "mask_butterworth",
+      "mask_gaussian",
+      "mask_ideal",
+      "noisy",
+      "profile_butterworth1",
+      "profile_butterworth2",
+      "profile_butterworth4",
+      "profile_butterworth8",
+      "profile_gaussian",
+      "profile_ideal"
+    ]
+  },
+  "identity_checks": [
+    {
+      "case": "manual_reference_ideal",
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "case": "constant_preservation_ideal",
+      "max_absolute_error": 0.0
+    },
+    {
+      "case": "centered_equivalence_ideal",
+      "max_absolute_error": 0.0
+    },
+    {
+      "case": "manual_reference_butterworth",
+      "max_absolute_error": 1.1443916996305594e-16
+    },
+    {
+      "case": "constant_preservation_butterworth",
+      "max_absolute_error": 9.158341117687217e-36
+    },
+    {
+      "case": "centered_equivalence_butterworth",
+      "max_absolute_error": 0.0
+    },
+    {
+      "case": "manual_reference_gaussian",
+      "max_absolute_error": 1.3877787807814457e-16
+    },
+    {
+      "case": "constant_preservation_gaussian",
+      "max_absolute_error": 2.0743424454243277e-38
+    },
+    {
+      "case": "centered_equivalence_gaussian",
+      "max_absolute_error": 0.0
+    },
+    {
+      "case": "sinusoid_response_ideal",
+      "max_absolute_error": 1.9429923231539452e-15
+    },
+    {
+      "case": "sinusoid_response_butterworth",
+      "max_absolute_error": 1.9430370909443555e-15
+    },
+    {
+      "case": "sinusoid_response_gaussian",
+      "max_absolute_error": 1.8875757114286427e-15
+    }
+  ],
+  "measurements": [
+    {
+      "mse_to_clean": 0.00737984572265156,
+      "periodic_gradient_energy": 0.0005501690410343188,
+      "high_frequency_energy_fraction": 5.194973068116601e-32,
+      "overshoot": 0.0898941404236766,
+      "undershoot": 0.0898941404236766,
+      "width_10_90_pixels": 11.420793112015218,
+      "maximum_slope": 0.078125,
+      "half_window_pixels": 48,
+      "kind": "ideal",
+      "order": null,
+      "label": "Ideal",
+      "cutoff_cycles_per_pixel": 0.04,
+      "imaginary_residual": 1.614313568062546e-16,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "mse_to_clean": 0.006928866836936859,
+      "periodic_gradient_energy": 0.0003739060275522529,
+      "high_frequency_energy_fraction": 3.154640291715107e-05,
+      "overshoot": 0.0,
+      "undershoot": 0.0,
+      "width_10_90_pixels": 12.810533188256272,
+      "maximum_slope": 0.1192773394253221,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 1,
+      "label": "Butterworth n=1",
+      "cutoff_cycles_per_pixel": 0.04,
+      "imaginary_residual": 1.3257267708811118e-16,
+      "mean_absolute_error": 1.5407439555097888e-34
+    },
+    {
+      "mse_to_clean": 0.007025653519458451,
+      "periodic_gradient_energy": 0.0004190993171386417,
+      "high_frequency_energy_fraction": 3.166419366510901e-08,
+      "overshoot": 0.033530432284683886,
+      "undershoot": 0.033530432284683664,
+      "width_10_90_pixels": 11.23028313635075,
+      "maximum_slope": 0.08884400608611265,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 2,
+      "label": "Butterworth n=2",
+      "cutoff_cycles_per_pixel": 0.04,
+      "imaginary_residual": 1.2851340466257118e-16,
+      "mean_absolute_error": 1.5407439555097888e-34
+    },
+    {
+      "mse_to_clean": 0.007213331666807823,
+      "periodic_gradient_energy": 0.0004905286187092583,
+      "high_frequency_energy_fraction": 8.539667049940061e-14,
+      "overshoot": 0.06825066409433855,
+      "undershoot": 0.06825066409433855,
+      "width_10_90_pixels": 11.099133385351735,
+      "maximum_slope": 0.0820937719988894,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 4,
+      "label": "Butterworth n=4",
+      "cutoff_cycles_per_pixel": 0.04,
+      "imaginary_residual": 1.341628359054578e-16,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "mse_to_clean": 0.007386788793254997,
+      "periodic_gradient_energy": 0.0005121449390403823,
+      "high_frequency_energy_fraction": 1.4718847225355583e-24,
+      "overshoot": 0.08358348753528322,
+      "undershoot": 0.08358348753528333,
+      "width_10_90_pixels": 11.126860457859493,
+      "maximum_slope": 0.08051626314916177,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 8,
+      "label": "Butterworth n=8",
+      "cutoff_cycles_per_pixel": 0.04,
+      "imaginary_residual": 1.5134046841748827e-16,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "mse_to_clean": 0.006761377609182093,
+      "periodic_gradient_energy": 0.00041389245113085057,
+      "high_frequency_energy_fraction": 1.4987235962208543e-12,
+      "overshoot": 0.0,
+      "undershoot": 1.1102230246251565e-16,
+      "width_10_90_pixels": 10.247888533488862,
+      "maximum_slope": 0.10026513098524004,
+      "half_window_pixels": 48,
+      "kind": "gaussian",
+      "order": null,
+      "label": "Gaussian",
+      "cutoff_cycles_per_pixel": 0.04,
+      "imaginary_residual": 1.2555476324570762e-16,
+      "mean_absolute_error": 1.5407439555097888e-34
+    },
+    {
+      "mse_to_clean": 0.005715593034984169,
+      "periodic_gradient_energy": 0.0008143941383388387,
+      "high_frequency_energy_fraction": 5.798298721458283e-32,
+      "overshoot": 0.09046186564388647,
+      "undershoot": 0.09046186564388647,
+      "width_10_90_pixels": 5.747521552378345,
+      "maximum_slope": 0.15625,
+      "half_window_pixels": 48,
+      "kind": "ideal",
+      "order": null,
+      "label": "Ideal",
+      "cutoff_cycles_per_pixel": 0.08,
+      "imaginary_residual": 1.5526921995753591e-16,
+      "mean_absolute_error": 3.0814879110195775e-34
+    },
+    {
+      "mse_to_clean": 0.0035570789210522618,
+      "periodic_gradient_energy": 0.0009804272003772936,
+      "high_frequency_energy_fraction": 0.0004016981021624733,
+      "overshoot": 2.6972226478960692e-06,
+      "undershoot": 2.697222648118114e-06,
+      "width_10_90_pixels": 6.465734836137955,
+      "maximum_slope": 0.2259426941241094,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 1,
+      "label": "Butterworth n=1",
+      "cutoff_cycles_per_pixel": 0.08,
+      "imaginary_residual": 1.5137809367676393e-16,
+      "mean_absolute_error": 1.5407439555097888e-34
+    },
+    {
+      "mse_to_clean": 0.00427477797973716,
+      "periodic_gradient_energy": 0.0007830466229325334,
+      "high_frequency_energy_fraction": 7.4002218417412985e-06,
+      "overshoot": 0.03381749798040712,
+      "undershoot": 0.03381749798040723,
+      "width_10_90_pixels": 5.672718497522737,
+      "maximum_slope": 0.17749693218168305,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 2,
+      "label": "Butterworth n=2",
+      "cutoff_cycles_per_pixel": 0.08,
+      "imaginary_residual": 1.2910742311789378e-16,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "mse_to_clean": 0.00515532690743001,
+      "periodic_gradient_energy": 0.0007703484769142723,
+      "high_frequency_energy_fraction": 5.450307736496205e-09,
+      "overshoot": 0.06792191367598321,
+      "undershoot": 0.06792191367598333,
+      "width_10_90_pixels": 5.594414449598588,
+      "maximum_slope": 0.16418748312839826,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 4,
+      "label": "Butterworth n=4",
+      "cutoff_cycles_per_pixel": 0.08,
+      "imaginary_residual": 1.5907328530860718e-16,
+      "mean_absolute_error": 1.5407439555097888e-34
+    },
+    {
+      "mse_to_clean": 0.0054861369773947285,
+      "periodic_gradient_energy": 0.0007957788139990079,
+      "high_frequency_energy_fraction": 6.197855326812206e-15,
+      "overshoot": 0.08331992691853052,
+      "undershoot": 0.08331992691853063,
+      "width_10_90_pixels": 5.60307322981194,
+      "maximum_slope": 0.16103272684685788,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 8,
+      "label": "Butterworth n=8",
+      "cutoff_cycles_per_pixel": 0.08,
+      "imaginary_residual": 1.6294634605199274e-16,
+      "mean_absolute_error": 1.5407439555097888e-34
+    },
+    {
+      "mse_to_clean": 0.003352793278300814,
+      "periodic_gradient_energy": 0.0009671964349211384,
+      "high_frequency_energy_fraction": 2.057809627055827e-05,
+      "overshoot": 1.656075276912361e-11,
+      "undershoot": 1.6560641746821148e-11,
+      "width_10_90_pixels": 5.0628332545989,
+      "maximum_slope": 0.2005302618884981,
+      "half_window_pixels": 48,
+      "kind": "gaussian",
+      "order": null,
+      "label": "Gaussian",
+      "cutoff_cycles_per_pixel": 0.08,
+      "imaginary_residual": 1.5314809453639944e-16,
+      "mean_absolute_error": 4.622231866529367e-34
+    },
+    {
+      "mse_to_clean": 0.002158695674059072,
+      "periodic_gradient_energy": 0.003786612779533627,
+      "high_frequency_energy_fraction": 5.8598724867476e-32,
+      "overshoot": 0.08596816307952504,
+      "undershoot": 0.08596816307952515,
+      "width_10_90_pixels": 2.7836758504309955,
+      "maximum_slope": 0.3203125,
+      "half_window_pixels": 48,
+      "kind": "ideal",
+      "order": null,
+      "label": "Ideal",
+      "cutoff_cycles_per_pixel": 0.16,
+      "imaginary_residual": 1.8272750733858843e-16,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "mse_to_clean": 0.0021872271169527113,
+      "periodic_gradient_energy": 0.003300971492918195,
+      "high_frequency_energy_fraction": 0.003783864284199641,
+      "overshoot": 5.898355353872731e-05,
+      "undershoot": 5.898355353850526e-05,
+      "width_10_90_pixels": 3.1156101766361246,
+      "maximum_slope": 0.4035503108826326,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 1,
+      "label": "Butterworth n=1",
+      "cutoff_cycles_per_pixel": 0.16,
+      "imaginary_residual": 1.9919277173428416e-16,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "mse_to_clean": 0.001873050325063723,
+      "periodic_gradient_energy": 0.002749547589671674,
+      "high_frequency_energy_fraction": 0.0010343935004445944,
+      "overshoot": 0.034133899702919024,
+      "undershoot": 0.034133899702919135,
+      "width_10_90_pixels": 2.8088530217306413,
+      "maximum_slope": 0.3519510894756488,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 2,
+      "label": "Butterworth n=2",
+      "cutoff_cycles_per_pixel": 0.16,
+      "imaginary_residual": 1.730049998362818e-16,
+      "mean_absolute_error": 1.5407439555097888e-34
+    },
+    {
+      "mse_to_clean": 0.0018585127270219584,
+      "periodic_gradient_energy": 0.0031861123933592506,
+      "high_frequency_energy_fraction": 0.0002228781905741474,
+      "overshoot": 0.06453512577483789,
+      "undershoot": 0.06453512577483778,
+      "width_10_90_pixels": 2.779322276916929,
+      "maximum_slope": 0.3283593846856867,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 4,
+      "label": "Butterworth n=4",
+      "cutoff_cycles_per_pixel": 0.16,
+      "imaginary_residual": 1.582981166641075e-16,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "mse_to_clean": 0.0019678609954356303,
+      "periodic_gradient_energy": 0.00357944822602435,
+      "high_frequency_energy_fraction": 2.1156347201925825e-05,
+      "overshoot": 0.07948725491380837,
+      "undershoot": 0.07948725491380859,
+      "width_10_90_pixels": 2.783058268311237,
+      "maximum_slope": 0.32206545289040145,
+      "half_window_pixels": 48,
+      "kind": "butterworth",
+      "order": 8,
+      "label": "Butterworth n=8",
+      "cutoff_cycles_per_pixel": 0.16,
+      "imaginary_residual": 1.7910396423430931e-16,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "mse_to_clean": 0.001989949635169825,
+      "periodic_gradient_energy": 0.0033082670824150892,
+      "high_frequency_energy_fraction": 0.0031055654908467107,
+      "overshoot": 9.743943708895308e-05,
+      "undershoot": 9.743943708906411e-05,
+      "width_10_90_pixels": 2.647178495349152,
+      "maximum_slope": 0.4003476061583019,
+      "half_window_pixels": 48,
+      "kind": "gaussian",
+      "order": null,
+      "label": "Gaussian",
+      "cutoff_cycles_per_pixel": 0.16,
+      "imaginary_residual": 2.2130731863135306e-16,
+      "mean_absolute_error": 0.0
+    }
+  ],
+  "comparisons": {
+    "noisy_baseline": {
+      "mse_to_clean": 0.014305138925374744,
+      "periodic_gradient_energy": 0.06292110592372799,
+      "high_frequency_energy_fraction": 0.09291269610918698
+    },
+    "gaussian_spatial_models": [
+      {
+        "cutoff": 0.06,
+        "spatial_sigma_pixels": 2.6525823848649224,
+        "max_kernel_error": 1.051133303971696e-17,
+        "exact_kernel_minimum": -3.1758783637113856e-18,
+        "exact_imaginary_residual": 1.519717355284482e-18,
+        "sampled_radius_pixels": 22
+      },
+      {
+        "cutoff": 0.2,
+        "spatial_sigma_pixels": 0.7957747154594768,
+        "max_kernel_error": 0.006191312694894785,
+        "exact_kernel_minimum": -0.0007374952317756941,
+        "exact_imaginary_residual": 9.394194823751325e-18,
+        "sampled_radius_pixels": 7
+      }
+    ],
+    "boundary_results": [
+      {
+        "label": "Circular, no padding",
+        "padded_shape": [
+          96,
+          128
+        ],
+        "crop_start": [
+          0,
+          0
+        ],
+        "opposite_edge_mean_absolute": 0.06529808722397125,
+        "max_imaginary_residual": 1.5439038936193583e-16,
+        "difference_to_zero_pad128": 0.42480008266823976
+      },
+      {
+        "label": "Zero extension, pad 64",
+        "padded_shape": [
+          224,
+          256
+        ],
+        "crop_start": [
+          64,
+          64
+        ],
+        "opposite_edge_mean_absolute": 1.4419717403533864e-17,
+        "max_imaginary_residual": 1.457921724881288e-16,
+        "difference_to_zero_pad128": 5.555039795802575e-16
+      },
+      {
+        "label": "Reflection, pad 64",
+        "padded_shape": [
+          224,
+          256
+        ],
+        "crop_start": [
+          64,
+          64
+        ],
+        "opposite_edge_mean_absolute": 5.5451111109597424e-17,
+        "max_imaginary_residual": 2.1196710360658452e-16,
+        "difference_to_zero_pad128": 0.4247946727578368
+      }
+    ]
+  },
+  "benchmarks": [
+    {
+      "kind": "ideal",
+      "rows": 64,
+      "columns": 80,
+      "repeats": 7,
+      "median_seconds": 0.0003000739998242352,
+      "minimum_seconds": 0.00025296499734395184,
+      "maximum_seconds": 0.000403527999878861
+    },
+    {
+      "kind": "ideal",
+      "rows": 128,
+      "columns": 160,
+      "repeats": 7,
+      "median_seconds": 0.0008352580007340293,
+      "minimum_seconds": 0.0007092310006555635,
+      "maximum_seconds": 0.000981876000878401
+    },
+    {
+      "kind": "ideal",
+      "rows": 256,
+      "columns": 320,
+      "repeats": 7,
+      "median_seconds": 0.0025499990006210282,
+      "minimum_seconds": 0.002338656002393691,
+      "maximum_seconds": 0.0027668109978549182
+    },
+    {
+      "kind": "butterworth",
+      "rows": 64,
+      "columns": 80,
+      "repeats": 7,
+      "median_seconds": 0.0003754959980142303,
+      "minimum_seconds": 0.0003194639975845348,
+      "maximum_seconds": 0.000512309001351241
+    },
+    {
+      "kind": "butterworth",
+      "rows": 128,
+      "columns": 160,
+      "repeats": 7,
+      "median_seconds": 0.0011622429992712568,
+      "minimum_seconds": 0.0010398420017736498,
+      "maximum_seconds": 0.001388227999996161
+    },
+    {
+      "kind": "butterworth",
+      "rows": 256,
+      "columns": 320,
+      "repeats": 7,
+      "median_seconds": 0.004047849000926362,
+      "minimum_seconds": 0.003768834998481907,
+      "maximum_seconds": 0.004645113996957662
+    },
+    {
+      "kind": "gaussian",
+      "rows": 64,
+      "columns": 80,
+      "repeats": 7,
+      "median_seconds": 0.0002939160003734287,
+      "minimum_seconds": 0.0002702609999687411,
+      "maximum_seconds": 0.0005206320020079147
+    },
+    {
+      "kind": "gaussian",
+      "rows": 128,
+      "columns": 160,
+      "repeats": 7,
+      "median_seconds": 0.0009483450012339745,
+      "minimum_seconds": 0.0008310220000566915,
+      "maximum_seconds": 0.001228611003170954
+    },
+    {
+      "kind": "gaussian",
+      "rows": 256,
+      "columns": 320,
+      "repeats": 7,
+      "median_seconds": 0.0033121689994004555,
+      "minimum_seconds": 0.0031182320017251186,
+      "maximum_seconds": 0.0033653270002105273
+    }
+  ]
+}

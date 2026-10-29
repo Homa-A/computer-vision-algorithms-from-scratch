@@ -1,0 +1,77 @@
+[
+  {
+    "path": "transfer_functions.png",
+    "bytes": 105692,
+    "sha256": "69f47e2175eaeb184d434ebb7c270ba96a83ece58b89608970913fb87c0308df"
+  },
+  {
+    "path": "radial_responses.png",
+    "bytes": 239407,
+    "sha256": "307332e95eae74bbc1717ddd7e2b451bb1c9bd1f99dd87a79c38ab57493dcc97"
+  },
+  {
+    "path": "synthetic_gallery.png",
+    "bytes": 181413,
+    "sha256": "5ccd1dac2c6b7b4610225e5cab3d077b28adcbed461df2de2742a58b067b307e"
+  },
+  {
+    "path": "cutoff_effects.png",
+    "bytes": 707962,
+    "sha256": "a5a198d7c4855c3d104c40bdf5dd1b0245a895045a66f6c879e51ca69585f83b"
+  },
+  {
+    "path": "butterworth_orders.png",
+    "bytes": 257741,
+    "sha256": "53ec12e69026eb39e8cea12387f15b70fa3bc9aab015ea349dd59e2e5ed4b982"
+  },
+  {
+    "path": "edge_ringing.png",
+    "bytes": 194717,
+    "sha256": "bef0394a545fd370e2d92c9030caaa9fb42965309413cecd1e880006883bed90"
+  },
+  {
+    "path": "gaussian_spatial.png",
+    "bytes": 225952,
+    "sha256": "68a0a8ccf63b376c417740ac8fe3d9b202e9272440a8e5970003c0e6a2c839eb"
+  },
+  {
+    "path": "boundary_effects.png",
+    "bytes": 154655,
+    "sha256": "d9a86bfc6f67122c9594c5caa27aac5cc73c8f549037f9270bf9b03627a6143a"
+  },
+  {
+    "path": "quantitative_comparison.png",
+    "bytes": 379163,
+    "sha256": "edbde276f3f00d08be0ea0420256b1951808079a5056ee776a0268bebf5c447b"
+  },
+  {
+    "path": "runtime_comparison.png",
+    "bytes": 101150,
+    "sha256": "559260fb745860d6f5168c35d3cd366452ed6682d3ba47b1d6f505e36a759560"
+  },
+  {
+    "path": "measurements.csv",
+    "bytes": 3986,
+    "sha256": "a15558a965394175945094f4b9a0ba8d844ab2a7fb42f191767f58b541a55a18"
+  },
+  {
+    "path": "radial_responses.csv",
+    "bytes": 447377,
+    "sha256": "8ff0136922ad5d3e534924a91a3d9470ef6625d3ecc2a8d495d06fdc684d5e4d"
+  },
+  {
+    "path": "benchmarks.csv",
+    "bytes": 824,
+    "sha256": "91c6444da500356abec87a73d63a67839370b65e15f32bdac986305d04d57218"
+  },
+  {
+    "path": "reference_arrays.npz",
+    "bytes": 2198396,
+    "sha256": "2d5bbac679d67184213e325aaab4f11644f4a4dcbb8e337927e9378f5bddf40e"
+  },
+  {
+    "path": "metrics.json",
+    "bytes": 17610,
+    "sha256": "cea987ac2a495690f026ff26b69e48d8ceba91a9ddc25903a285a2a1cc3e50d0"
+  }
+]
