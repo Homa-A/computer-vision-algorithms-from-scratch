@@ -70,7 +70,8 @@ computer-vision-fundamentals-lab/
 │       ├── 01-fourier-transform/
 │       ├── 02-fourier-spectrum-explorer/
 │       ├── 03-fourier-properties/
-│       └── 04-low-pass-filters/
+│       ├── 04-low-pass-filters/
+│       └── 05-high-pass-filters/
 ├── docs/
 ├── scripts/
 ├── .github/workflows/
@@ -108,7 +109,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and all four Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
+By default this runs every assignment test suite against the committed outputs and all five Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
 
 ## Run an experiment directly
 
@@ -142,6 +143,10 @@ See the assignment-level READMEs for the purpose, algorithms, and main findings 
 **[Chapter 04 · Lab 04: Frequency-Domain Low-Pass Filters](chapter-labs/chapter-04-frequency-domain/04-low-pass-filters/README.md)** compares ideal, Butterworth and Gaussian filters, with matched-response comparisons, measured ringing, explicit padding and reproducible synthetic inputs.
 
 ![Low-pass frequency responses](chapter-labs/chapter-04-frequency-domain/04-low-pass-filters/output/transfer_functions.png)
+
+**[Lab 05: High-Pass Filters and Sharpening](chapter-labs/chapter-04-frequency-domain/05-high-pass-filters/README.md)** compares high-pass complements, unsharp masking, high-boost, emphasis and exact discrete Laplacian sharpening, including edge/noise and boundary measurements.
+
+![Sharpening comparison](chapter-labs/chapter-04-frequency-domain/05-high-pass-filters/output/methods.png)
 
 ## Adding future assignments
 The repository is intentionally designed to grow. Add a new folder such as `assignments/assignment-03/`, give its questions descriptive names, add a short assignment README, and register its demos/tests in `scripts/validate_repository.py`.

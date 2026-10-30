@@ -1,0 +1,92 @@
+[
+  {
+    "path": "transfer.png",
+    "bytes": 99975,
+    "sha256": "c0f0e5e9412e3104ed5455c2d2e8a38962864895ecd6c40169701acaf6ae9012"
+  },
+  {
+    "path": "radial.png",
+    "bytes": 122681,
+    "sha256": "d95d72a273e343de961cc39526bed001c237fb456167aec2fe686938f3513392"
+  },
+  {
+    "path": "cutoffs.png",
+    "bytes": 599435,
+    "sha256": "79ffc18c1ba513c67fe95dc30a403da8cd6ac862600c21b968a4d8abe8bae493"
+  },
+  {
+    "path": "orders.png",
+    "bytes": 278963,
+    "sha256": "fcbf95e3c2b275d3a368e778211d586aa0b55a55b3aa7fe17b2b1f3ab71206a3"
+  },
+  {
+    "path": "methods.png",
+    "bytes": 396861,
+    "sha256": "fb79285513bdeaf73ec94d33773df441b3cb570f7e51b2414bfb642c45fbd073"
+  },
+  {
+    "path": "strength.png",
+    "bytes": 272344,
+    "sha256": "007a796c6c324e9ab69609ab9bcb5b941eef6e1701a50f2096a094ebd5920a22"
+  },
+  {
+    "path": "boost_emphasis.png",
+    "bytes": 343297,
+    "sha256": "83cc6a68343579590521ef71be1a2efe9efdef12030b3344d13a0c12be8dd90b"
+  },
+  {
+    "path": "laplacian.png",
+    "bytes": 200342,
+    "sha256": "bcf08c120ad7d2be924da2da0d69ecb34a501dee06600569ac103d9481d5b4a0"
+  },
+  {
+    "path": "profiles.png",
+    "bytes": 119165,
+    "sha256": "741e766e1027774946b192739983a7f571d3e217305899bd84b6cdf620da95a7"
+  },
+  {
+    "path": "boundary.png",
+    "bytes": 106917,
+    "sha256": "e4bfeab8f9ed1a3629bef7c6a54753356834ef05c8c8a55d134457d92b610c40"
+  },
+  {
+    "path": "quantitative.png",
+    "bytes": 111509,
+    "sha256": "ce20a266c53516299bb78d93248f8085954dd9df05edddc389aca427438f16f9"
+  },
+  {
+    "path": "measurements.csv",
+    "bytes": 646,
+    "sha256": "d98d7e6249472e2c3d19cad6a8e238b1292188f5d39064f584d688a9dc30bd45"
+  },
+  {
+    "path": "parameters.csv",
+    "bytes": 696,
+    "sha256": "a27fbbcd7549cd353a7515ce766efb54bc866687a37959390f3ea03ec7de2a23"
+  },
+  {
+    "path": "ringing.csv",
+    "bytes": 486,
+    "sha256": "b2d10a4b359b8dd5909bf4395beac3b97a8fbdde4ec34ac3f7f832b4d57a762b"
+  },
+  {
+    "path": "cutoff_sweep.csv",
+    "bytes": 322,
+    "sha256": "1ff581b32bab96ec21fe6cc364bfb68e2c103155f88153928ad4500f9eb5a227"
+  },
+  {
+    "path": "radial.csv",
+    "bytes": 111056,
+    "sha256": "622fa8a2e812d6ac6df9a5fc83de731294f763ec37187e209f90eedc8356cdf6"
+  },
+  {
+    "path": "reference_arrays.npz",
+    "bytes": 1767710,
+    "sha256": "180e8ddac250f5c94af94d241c69661d53235f731a9461c30b40010f0c42f672"
+  },
+  {
+    "path": "metrics.json",
+    "bytes": 386613,
+    "sha256": "0446e4c1d3e52df8204e32795dc8a0040d04b7d4e27dbe928fa6745a8d6820ca"
+  }
+]
