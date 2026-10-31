@@ -1,0 +1,628 @@
+{
+  "settings": {
+    "shape": [
+      96,
+      128
+    ],
+    "seed": 606,
+    "defaults": {
+      "gamma_low": 0.6,
+      "gamma_high": 1.4,
+      "cutoff": 0.06,
+      "c": 1.0
+    },
+    "padding": [
+      32,
+      32
+    ]
+  },
+  "measurements": [
+    {
+      "scene": "uniform",
+      "method": "input",
+      "log_scale_offset": -0.35667494393873245,
+      "log_reflectance_rmse": 5.09681123426127e-17,
+      "low_frequency_log_residual_std": 2.5699411760332226e-18,
+      "detail_std_ratio": 1.0000000000000002,
+      "aligned_intensity_rmse": 3.968436675747323e-17,
+      "log_dynamic_range": 0.5794381016765009,
+      "mean_intensity": 0.7390946865596811,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "uniform",
+      "method": "global_power",
+      "log_scale_offset": -0.23237996636323946,
+      "log_reflectance_rmse": 0.05160219627751739,
+      "low_frequency_log_residual_std": 0.02674846180214906,
+      "detail_std_ratio": 0.6,
+      "aligned_intensity_rmse": 0.05697296684781428,
+      "log_dynamic_range": 0.3476628610059006,
+      "mean_intensity": 0.8324121637317061,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "uniform",
+      "method": "ordinary_lowpass",
+      "log_scale_offset": -0.351017153919289,
+      "log_reflectance_rmse": 0.10012124869480118,
+      "low_frequency_log_residual_std": 0.0024103873261990014,
+      "detail_std_ratio": 0.059435979774962976,
+      "aligned_intensity_rmse": 0.10644895051303346,
+      "log_dynamic_range": 0.19539249351132176,
+      "mean_intensity": 0.7390946865596811,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "uniform",
+      "method": "identity",
+      "log_scale_offset": -0.35667494393873245,
+      "log_reflectance_rmse": 1.1644418822098865e-16,
+      "low_frequency_log_residual_std": 1.0516723941705248e-17,
+      "detail_std_ratio": 1.0000000000000002,
+      "aligned_intensity_rmse": 1.280174211602473e-16,
+      "log_dynamic_range": 0.5794381016765009,
+      "mean_intensity": 0.7390946865596812,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "uniform",
+      "method": "homomorphic",
+      "log_scale_offset": -0.23237996636323943,
+      "log_reflectance_rmse": 0.049239334674151765,
+      "low_frequency_log_residual_std": 0.02467094816553267,
+      "detail_std_ratio": 1.397327232620137,
+      "aligned_intensity_rmse": 0.05354690461117131,
+      "log_dynamic_range": 0.8044121771384273,
+      "mean_intensity": 0.8398891985683522,
+      "imaginary_residual": 1.6382876597802718e-16
+    },
+    {
+      "scene": "gradient",
+      "method": "input",
+      "log_scale_offset": -0.50625,
+      "log_reflectance_rmse": 0.461866119671058,
+      "low_frequency_log_residual_std": 0.39742201858480614,
+      "detail_std_ratio": 1.4039997725568416,
+      "aligned_intensity_rmse": 0.5244627795948946,
+      "log_dynamic_range": 1.9232361146926598,
+      "mean_intensity": 0.7024592318611642,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "gradient",
+      "method": "global_power",
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.28379051084164353,
+      "low_frequency_log_residual_std": 0.24166555085158847,
+      "detail_std_ratio": 0.8423998635341048,
+      "aligned_intensity_rmse": 0.3051615288233797,
+      "log_dynamic_range": 1.1539416688155957,
+      "mean_intensity": 0.7892623671325752,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "gradient",
+      "method": "ordinary_lowpass",
+      "log_scale_offset": -0.4869887048814913,
+      "log_reflectance_rmse": 0.4407387728310394,
+      "low_frequency_log_residual_std": 0.38946894188802056,
+      "detail_std_ratio": 0.23440150801896845,
+      "aligned_intensity_rmse": 0.48568023234307367,
+      "log_dynamic_range": 1.4268077277585112,
+      "mean_intensity": 0.7024592318611641,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "gradient",
+      "method": "identity",
+      "log_scale_offset": -0.50625,
+      "log_reflectance_rmse": 0.461866119671058,
+      "low_frequency_log_residual_std": 0.39742201858480614,
+      "detail_std_ratio": 1.4039997725568416,
+      "aligned_intensity_rmse": 0.5244627795948946,
+      "log_dynamic_range": 1.9232361146926598,
+      "mean_intensity": 0.7024592318611642,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "gradient",
+      "method": "homomorphic",
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.3435698299705994,
+      "low_frequency_log_residual_std": 0.2539066620860338,
+      "detail_std_ratio": 1.9372961583186896,
+      "aligned_intensity_rmse": 0.4030971185559631,
+      "log_dynamic_range": 2.319814867905065,
+      "mean_intensity": 0.8111043452830157,
+      "imaginary_residual": 4.359675051150252e-16
+    },
+    {
+      "scene": "vignette",
+      "method": "input",
+      "log_scale_offset": -0.366728832103588,
+      "log_reflectance_rmse": 0.23199862322992273,
+      "low_frequency_log_residual_std": 0.21849350636879153,
+      "detail_std_ratio": 1.0017410998737295,
+      "aligned_intensity_rmse": 0.2550780586524056,
+      "log_dynamic_range": 1.6020410394214122,
+      "mean_intensity": 0.7610193057814492,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "vignette",
+      "method": "global_power",
+      "log_scale_offset": -0.23841229926215282,
+      "log_reflectance_rmse": 0.1267180817368126,
+      "low_frequency_log_residual_std": 0.11127775332098985,
+      "detail_std_ratio": 0.6010446599242377,
+      "aligned_intensity_rmse": 0.1295048238731188,
+      "log_dynamic_range": 0.9612246236528473,
+      "mean_intensity": 0.8392201289458309,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "vignette",
+      "method": "ordinary_lowpass",
+      "log_scale_offset": -0.3599679109718718,
+      "log_reflectance_rmse": 0.24885377764644417,
+      "low_frequency_log_residual_std": 0.21502181005092916,
+      "detail_std_ratio": 0.06957746036072969,
+      "aligned_intensity_rmse": 0.2679955643568324,
+      "log_dynamic_range": 1.1964806261891678,
+      "mean_intensity": 0.7610193057814492,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "vignette",
+      "method": "identity",
+      "log_scale_offset": -0.366728832103588,
+      "log_reflectance_rmse": 0.23199862322992273,
+      "low_frequency_log_residual_std": 0.21849350636879153,
+      "detail_std_ratio": 1.0017410998737295,
+      "aligned_intensity_rmse": 0.25507805865240557,
+      "log_dynamic_range": 1.6020410394214122,
+      "mean_intensity": 0.7610193057814492,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "vignette",
+      "method": "homomorphic",
+      "log_scale_offset": -0.23841229926215277,
+      "log_reflectance_rmse": 0.13288206905906685,
+      "low_frequency_log_residual_std": 0.1167841531459752,
+      "detail_std_ratio": 1.398947049136537,
+      "aligned_intensity_rmse": 0.14141406395335562,
+      "log_dynamic_range": 1.3263654347048537,
+      "mean_intensity": 0.8477085655106052,
+      "imaginary_residual": 3.0222957327690154e-16
+    },
+    {
+      "scene": "sinusoidal",
+      "method": "input",
+      "log_scale_offset": -0.6,
+      "log_reflectance_rmse": 0.5533985905294664,
+      "low_frequency_log_residual_std": 0.5321926627281569,
+      "detail_std_ratio": 1.000563518968971,
+      "aligned_intensity_rmse": 0.673641519978119,
+      "log_dynamic_range": 2.48035276669625,
+      "mean_intensity": 0.6597906370839152,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "sinusoidal",
+      "method": "global_power",
+      "log_scale_offset": -0.37837499999999996,
+      "log_reflectance_rmse": 0.34968651237409504,
+      "low_frequency_log_residual_std": 0.3338362957212531,
+      "detail_std_ratio": 0.6003381113813826,
+      "aligned_intensity_rmse": 0.3867956955595335,
+      "log_dynamic_range": 1.4882116600177502,
+      "mean_intensity": 0.7543317581446498,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "sinusoidal",
+      "method": "ordinary_lowpass",
+      "log_scale_offset": -0.5916950839301741,
+      "log_reflectance_rmse": 0.5571588431521483,
+      "low_frequency_log_residual_std": 0.5271152072276742,
+      "detail_std_ratio": 0.06802634178139527,
+      "aligned_intensity_rmse": 0.6649524949979554,
+      "log_dynamic_range": 2.0682325432296986,
+      "mean_intensity": 0.6597906370839152,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "sinusoidal",
+      "method": "identity",
+      "log_scale_offset": -0.5999999999999999,
+      "log_reflectance_rmse": 0.5533985905294663,
+      "low_frequency_log_residual_std": 0.5321926627281569,
+      "detail_std_ratio": 1.000563518968971,
+      "aligned_intensity_rmse": 0.6736415199781189,
+      "log_dynamic_range": 2.48035276669625,
+      "mean_intensity": 0.6597906370839153,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "sinusoidal",
+      "method": "homomorphic",
+      "log_scale_offset": -0.3783749999999999,
+      "log_reflectance_rmse": 0.35736852450001944,
+      "low_frequency_log_residual_std": 0.3413973498381514,
+      "detail_std_ratio": 1.3974815525648838,
+      "aligned_intensity_rmse": 0.40439695593925096,
+      "log_dynamic_range": 1.8791365559082185,
+      "mean_intensity": 0.7629651693189273,
+      "imaginary_residual": 3.833847326475844e-16
+    },
+    {
+      "scene": "dark",
+      "method": "input",
+      "log_scale_offset": -1.6070312499999997,
+      "log_reflectance_rmse": 0.5195993846299402,
+      "low_frequency_log_residual_std": 0.4470997709079069,
+      "detail_std_ratio": 1.4990469837453646,
+      "aligned_intensity_rmse": 0.6058250710162012,
+      "log_dynamic_range": 2.11386111469266,
+      "mean_intensity": 0.23978532400200517,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "dark",
+      "method": "global_power",
+      "log_scale_offset": -0.9825937499999999,
+      "log_reflectance_rmse": 0.3179161497737425,
+      "low_frequency_log_residual_std": 0.2713098071516959,
+      "detail_std_ratio": 0.8994281902472187,
+      "aligned_intensity_rmse": 0.3451051687013539,
+      "log_dynamic_range": 1.2683166688155958,
+      "mean_intensity": 0.41172571802451624,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "dark",
+      "method": "ordinary_lowpass",
+      "log_scale_offset": -1.5841346939530914,
+      "log_reflectance_rmse": 0.49300721682061077,
+      "low_frequency_log_residual_std": 0.4380915089947974,
+      "detail_std_ratio": 0.26119434706710454,
+      "aligned_intensity_rmse": 0.5551058944561928,
+      "log_dynamic_range": 1.6036846682223347,
+      "mean_intensity": 0.23978532400200522,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "dark",
+      "method": "identity",
+      "log_scale_offset": -1.6070312499999997,
+      "log_reflectance_rmse": 0.5195993846299402,
+      "low_frequency_log_residual_std": 0.44709977090790687,
+      "detail_std_ratio": 1.4990469837453646,
+      "aligned_intensity_rmse": 0.6058250710162011,
+      "log_dynamic_range": 2.1138611146926602,
+      "mean_intensity": 0.23978532400200522,
+      "imaginary_residual": 0.0
+    },
+    {
+      "scene": "dark",
+      "method": "homomorphic",
+      "log_scale_offset": -0.9825937499999999,
+      "log_reflectance_rmse": 0.3856385445180646,
+      "low_frequency_log_residual_std": 0.28515779480212283,
+      "detail_std_ratio": 2.0655691338882427,
+      "aligned_intensity_rmse": 0.4658725194016822,
+      "log_dynamic_range": 2.581861810936373,
+      "mean_intensity": 0.425319708822865,
+      "imaginary_residual": 4.591708717624903e-16
+    }
+  ],
+  "parameters": [
+    {
+      "gamma_low": 0.3,
+      "gamma_high": 1.0,
+      "cutoff": 0.06,
+      "c": 1.0,
+      "log_scale_offset": -0.18403125,
+      "log_reflectance_rmse": 0.20702670736506323,
+      "low_frequency_log_residual_std": 0.1407142402135624,
+      "detail_std_ratio": 1.3799184320444233,
+      "aligned_intensity_rmse": 0.23186194754194353,
+      "log_dynamic_range": 1.6366324419050668,
+      "mean_intensity": 0.8929493693484535,
+      "imaginary_residual": 2.6131283006600644e-16
+    },
+    {
+      "gamma_low": 0.3,
+      "gamma_high": 1.4,
+      "cutoff": 0.06,
+      "c": 1.0,
+      "log_scale_offset": -0.18403125,
+      "log_reflectance_rmse": 0.25129760639159443,
+      "low_frequency_log_residual_std": 0.14709113992635986,
+      "detail_std_ratio": 1.9284779580251952,
+      "aligned_intensity_rmse": 0.3020163675392185,
+      "log_dynamic_range": 2.272265785841779,
+      "mean_intensity": 0.9062461267874417,
+      "imaginary_residual": 3.667025713855802e-16
+    },
+    {
+      "gamma_low": 0.3,
+      "gamma_high": 2.0,
+      "cutoff": 0.06,
+      "c": 1.0,
+      "log_scale_offset": -0.18403125,
+      "log_reflectance_rmse": 0.3315231593151879,
+      "low_frequency_log_residual_std": 0.15751267852041925,
+      "detail_std_ratio": 2.75146740461106,
+      "aligned_intensity_rmse": 0.46012415157335074,
+      "log_dynamic_range": 3.2257158017468477,
+      "mean_intensity": 0.9352893016782954,
+      "imaginary_residual": 5.52130915962461e-16
+    },
+    {
+      "gamma_low": 0.6,
+      "gamma_high": 1.0,
+      "cutoff": 0.06,
+      "c": 1.0,
+      "log_scale_offset": -0.32212499999999994,
+      "log_reflectance_rmse": 0.3081172633463915,
+      "low_frequency_log_residual_std": 0.24763485361541485,
+      "detail_std_ratio": 1.3893304399399462,
+      "aligned_intensity_rmse": 0.34138269412843647,
+      "log_dynamic_range": 1.70348786708277,
+      "mean_intensity": 0.7982687722159647,
+      "imaginary_residual": 3.394013438170106e-16
+    },
+    {
+      "gamma_low": 0.6,
+      "gamma_high": 1.4,
+      "cutoff": 0.06,
+      "c": 1.0,
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.3435698299705994,
+      "low_frequency_log_residual_std": 0.2539066620860338,
+      "detail_std_ratio": 1.9372961583186896,
+      "aligned_intensity_rmse": 0.4030971185559631,
+      "log_dynamic_range": 2.319814867905065,
+      "mean_intensity": 0.8111043452830157,
+      "imaginary_residual": 4.359675051150252e-16
+    },
+    {
+      "gamma_low": 0.6,
+      "gamma_high": 2.0,
+      "cutoff": 0.06,
+      "c": 1.0,
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.4111175893434299,
+      "low_frequency_log_residual_std": 0.2638341011362892,
+      "detail_std_ratio": 2.7598368640888467,
+      "aligned_intensity_rmse": 0.5509415091377584,
+      "log_dynamic_range": 3.2732648838101337,
+      "mean_intensity": 0.8385399669330628,
+      "imaginary_residual": 5.226256601320129e-16
+    },
+    {
+      "gamma_low": 1.0,
+      "gamma_high": 1.0,
+      "cutoff": 0.06,
+      "c": 1.0,
+      "log_scale_offset": -0.50625,
+      "log_reflectance_rmse": 0.461866119671058,
+      "low_frequency_log_residual_std": 0.39742201858480614,
+      "detail_std_ratio": 1.4039997725568416,
+      "aligned_intensity_rmse": 0.5244627795948946,
+      "log_dynamic_range": 1.9232361146926598,
+      "mean_intensity": 0.7024592318611642,
+      "imaginary_residual": 2.993748128823533e-16
+    },
+    {
+      "gamma_low": 1.0,
+      "gamma_high": 1.4,
+      "cutoff": 0.06,
+      "c": 1.0,
+      "log_scale_offset": -0.50625,
+      "log_reflectance_rmse": 0.49007723217699695,
+      "low_frequency_log_residual_std": 0.40353048817904147,
+      "detail_std_ratio": 1.9505877744836329,
+      "aligned_intensity_rmse": 0.5806295662403537,
+      "log_dynamic_range": 2.456135090021302,
+      "mean_intensity": 0.7146762739374622,
+      "imaginary_residual": 4.808215513044036e-16
+    },
+    {
+      "gamma_low": 1.0,
+      "gamma_high": 2.0,
+      "cutoff": 0.06,
+      "c": 1.0,
+      "log_scale_offset": -0.50625,
+      "log_reflectance_rmse": 0.5447754023964889,
+      "low_frequency_log_residual_std": 0.41303417209949234,
+      "detail_std_ratio": 2.7720796766528024,
+      "aligned_intensity_rmse": 0.7186734520649439,
+      "log_dynamic_range": 3.3366636598945147,
+      "mean_intensity": 0.7401841555004136,
+      "imaginary_residual": 5.636389138164716e-16
+    },
+    {
+      "gamma_low": 0.6,
+      "gamma_high": 1.4,
+      "cutoff": 0.03,
+      "c": 0.5,
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.36546131562890727,
+      "low_frequency_log_residual_std": 0.26532807672876285,
+      "detail_std_ratio": 1.954300153215194,
+      "aligned_intensity_rmse": 0.43675903975301955,
+      "log_dynamic_range": 2.3837968235650986,
+      "mean_intensity": 0.8176124685744798,
+      "imaginary_residual": 4.1837150616559904e-16
+    },
+    {
+      "gamma_low": 0.6,
+      "gamma_high": 1.4,
+      "cutoff": 0.06,
+      "c": 0.5,
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.32642603284013344,
+      "low_frequency_log_residual_std": 0.2478587560637334,
+      "detail_std_ratio": 1.8873965363941632,
+      "aligned_intensity_rmse": 0.3757786478510136,
+      "log_dynamic_range": 2.2527540894255047,
+      "mean_intensity": 0.8060293403722142,
+      "imaginary_residual": 4.1543853504135955e-16
+    },
+    {
+      "gamma_low": 0.6,
+      "gamma_high": 1.4,
+      "cutoff": 0.12,
+      "c": 0.5,
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.30245617112697765,
+      "low_frequency_log_residual_std": 0.2432201562701923,
+      "detail_std_ratio": 1.5995355615601632,
+      "aligned_intensity_rmse": 0.3356164935682592,
+      "log_dynamic_range": 1.9852411557343839,
+      "mean_intensity": 0.7975078440431904,
+      "imaginary_residual": 3.8641565718554236e-16
+    },
+    {
+      "gamma_low": 0.6,
+      "gamma_high": 1.4,
+      "cutoff": 0.03,
+      "c": 2.0,
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.42863300319936254,
+      "low_frequency_log_residual_std": 0.3169794934243556,
+      "detail_std_ratio": 1.9639532877595722,
+      "aligned_intensity_rmse": 0.5286465109378844,
+      "log_dynamic_range": 2.5211459752741314,
+      "mean_intensity": 0.8384098815810775,
+      "imaginary_residual": 4.1858229984758263e-16
+    },
+    {
+      "gamma_low": 0.6,
+      "gamma_high": 1.4,
+      "cutoff": 0.06,
+      "c": 2.0,
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.36546131562890727,
+      "low_frequency_log_residual_std": 0.2653280767287629,
+      "detail_std_ratio": 1.954300153215194,
+      "aligned_intensity_rmse": 0.43675903975301955,
+      "log_dynamic_range": 2.3837968235650986,
+      "mean_intensity": 0.8176124685744797,
+      "imaginary_residual": 4.272265227114172e-16
+    },
+    {
+      "gamma_low": 0.6,
+      "gamma_high": 1.4,
+      "cutoff": 0.12,
+      "c": 2.0,
+      "log_scale_offset": -0.322125,
+      "log_reflectance_rmse": 0.32642603284013344,
+      "low_frequency_log_residual_std": 0.2478587560637334,
+      "detail_std_ratio": 1.887396536394163,
+      "aligned_intensity_rmse": 0.3757786478510136,
+      "log_dynamic_range": 2.2527540894255043,
+      "mean_intensity": 0.8060293403722142,
+      "imaginary_residual": 4.294204976281667e-16
+    }
+  ],
+  "noise": [
+    {
+      "scale": 1.0,
+      "floor": 1e-07,
+      "raw_noise_rms": 1.9979573609658993e-06,
+      "output_delta_rms": 7.019565878306859e-06,
+      "noise_gain": 3.5133712137446698,
+      "log_delta_rms": 2.2221987854109114e-05,
+      "floored_pixels": 0,
+      "imaginary_residual": 7.361539468861207e-16
+    },
+    {
+      "scale": 0.0001,
+      "floor": 1e-07,
+      "raw_noise_rms": 1.997957360966108e-06,
+      "output_delta_rms": 0.000284296208341504,
+      "noise_gain": 142.2934312291996,
+      "log_delta_rms": 0.2306587634938183,
+      "floored_pixels": 0,
+      "imaginary_residual": 7.298234936217453e-16
+    },
+    {
+      "scale": 1e-05,
+      "floor": 1e-07,
+      "raw_noise_rms": 1.997957360966108e-06,
+      "output_delta_rms": 0.001582570815293107,
+      "noise_gain": 792.0943891054103,
+      "log_delta_rms": 2.257789280427494,
+      "floored_pixels": 2029,
+      "imaginary_residual": 2.9137382389878065e-15
+    }
+  ],
+  "checks": [
+    {
+      "name": "identity_uniform",
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "factorization_uniform",
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "identity_gradient",
+      "max_absolute_error": 6.661338147750939e-16
+    },
+    {
+      "name": "factorization_gradient",
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "identity_vignette",
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "name": "factorization_vignette",
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "identity_sinusoidal",
+      "max_absolute_error": 8.881784197001252e-16
+    },
+    {
+      "name": "factorization_sinusoidal",
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "name": "identity_dark",
+      "max_absolute_error": 5.551115123125783e-16
+    },
+    {
+      "name": "factorization_dark",
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "name": "constant_0.6",
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "constant_1.0",
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "constant_1.4",
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "global_scale_q3.2",
+      "max_absolute_error": 3.552713678800501e-15
+    },
+    {
+      "name": "analytic_log_mode",
+      "max_absolute_error": 2.220446049250313e-16
+    }
+  ],
+  "boundary_max_difference": 0.9370936003717731
+}

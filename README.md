@@ -109,7 +109,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and all five Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
+By default this runs every assignment test suite against the committed outputs and all six Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
 
 ## Run an experiment directly
 
@@ -156,3 +156,11 @@ A concrete template is available in **[docs/ADDING_ASSIGNMENTS.md](docs/ADDING_A
 ## Notes on coursework assets
 
 This portfolio copy intentionally excludes the original university submission reports because they contain personal/course-submission information. Some input images are standard benchmark or course-provided assets and may have separate redistribution terms; see **[docs/ASSET_NOTICE.md](docs/ASSET_NOTICE.md)**.
+
+## Homomorphic filtering and illumination correction
+
+[Chapter 04 · Lab 06](chapter-labs/chapter-04-frequency-domain/06-homomorphic-filtering/README.md) examines the multiplicative illumination model, log-domain frequency filtering, scale ambiguity, noise sensitivity and reflection boundaries with known synthetic ground truth and portable content audits.
+
+![Known illumination and reflectance](chapter-labs/chapter-04-frequency-domain/06-homomorphic-filtering/output/decomposition.png)
+
+![Homomorphic correction versus baselines](chapter-labs/chapter-04-frequency-domain/06-homomorphic-filtering/output/baselines.png)
