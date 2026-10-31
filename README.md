@@ -109,7 +109,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and all six Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
+By default this runs every assignment test suite against the committed outputs and all seven Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
 
 ## Run an experiment directly
 
@@ -164,3 +164,11 @@ This portfolio copy intentionally excludes the original university submission re
 ![Known illumination and reflectance](chapter-labs/chapter-04-frequency-domain/06-homomorphic-filtering/output/decomposition.png)
 
 ![Homomorphic correction versus baselines](chapter-labs/chapter-04-frequency-domain/06-homomorphic-filtering/output/baselines.png)
+
+## Periodic noise: band-reject and notch filtering
+
+[Chapter 04 · Lab 07](chapter-labs/chapter-04-frequency-domain/07-notch-band-reject-filtering/README.md) compares ideal, Butterworth and Gaussian annular rejection with conjugate-paired notch filters. Deterministic synthetic ground truth exposes leakage, ringing, legitimate-texture removal, optional detector false positives and boundary sensitivity.
+
+![Band and notch filtering against known truth](chapter-labs/chapter-04-frequency-domain/07-notch-band-reject-filtering/output/overview.png)
+
+![Known interference versus candidate spectral structure](chapter-labs/chapter-04-frequency-domain/07-notch-band-reject-filtering/output/spectral_peaks.png)
