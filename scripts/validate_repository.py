@@ -50,6 +50,7 @@ def main() -> int:
         ("Lab 05 / High-pass and sharpening", "05-high-pass-filters"),
         ("Lab 06 / Homomorphic filtering", "06-homomorphic-filtering"),
         ("Lab 07 / Band-reject and notch filtering", "07-notch-band-reject-filtering"),
+        ("Lab 08 / FFT template matching", "08-fft-template-matching"),
     ]:
         lab_dir = chapter_dir / directory
         print(f"\nChapter 04 / {title}", flush=True)

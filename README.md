@@ -19,6 +19,10 @@ The core algorithms are implemented directly; Pillow is used for image I/O, Matp
 | Fourier properties | Independent spatial convolution, correlation and finite differences; exact discrete scaling and rotations | Padding, kernel orientation and lag conventions verified quantitatively |
 | Frequency-domain low-pass filters | Ideal, Butterworth and Gaussian responses with explicit cutoff units and padding | Quantified smoothing, edge ringing, matched responses and boundary effects |
 | Edge detection | Canny, Sobel, Prewitt, Roberts | Canny parameter sweep plus stage-by-stage implementation |
+| Frequency-domain sharpening | High-pass complements, unsharp, high-boost, emphasis and discrete Laplacian | Quantified edge and noise trade-offs |
+| Homomorphic filtering | Log-domain illumination correction with explicit numerical limits | Known reflectance, scale-aware metrics and noise sensitivity |
+| Periodic-noise rejection | Paired ideal, Butterworth and Gaussian notches and radial band rejection | Leakage, legitimate-texture damage and detector false positives |
+| FFT template matching | Direct/FFT valid correlation, stable ZNCC and deterministic localization | Brightness distractors, ambiguity, padding and precision-sensitive cases |
 
 ## Selected results
 
@@ -71,7 +75,10 @@ computer-vision-fundamentals-lab/
 │       ├── 02-fourier-spectrum-explorer/
 │       ├── 03-fourier-properties/
 │       ├── 04-low-pass-filters/
-│       └── 05-high-pass-filters/
+│       ├── 05-high-pass-filters/
+│       ├── 06-homomorphic-filtering/
+│       ├── 07-notch-band-reject-filtering/
+│       └── 08-fft-template-matching/
 ├── docs/
 ├── scripts/
 ├── .github/workflows/
@@ -109,7 +116,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and all seven Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
+By default this runs every assignment test suite against the committed outputs and all eight Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
 
 ## Run an experiment directly
 
@@ -147,6 +154,14 @@ See the assignment-level READMEs for the purpose, algorithms, and main findings 
 **[Lab 05: High-Pass Filters and Sharpening](chapter-labs/chapter-04-frequency-domain/05-high-pass-filters/README.md)** compares high-pass complements, unsharp masking, high-boost, emphasis and exact discrete Laplacian sharpening, including edge/noise and boundary measurements.
 
 ![Sharpening comparison](chapter-labs/chapter-04-frequency-domain/05-high-pass-filters/output/methods.png)
+
+**[Chapter 04 · Lab 06: Homomorphic Filtering](chapter-labs/chapter-04-frequency-domain/06-homomorphic-filtering/README.md)** — illumination correction, numeric limits and canonical artifact verification.
+
+**[Chapter 04 · Lab 07: Band-Reject and Notch Filtering](chapter-labs/chapter-04-frequency-domain/07-notch-band-reject-filtering/README.md)** — periodic-noise removal with explicit signal-damage diagnostics.
+
+**[Chapter 04 · Lab 08: FFT-Based Template Matching](chapter-labs/chapter-04-frequency-domain/08-fft-template-matching/README.md)** — practical valid-region correlation, stable normalized matching, top-left localization and ambiguous/failure cases.
+
+![Different matching objectives give different rankings](chapter-labs/chapter-04-frequency-domain/08-fft-template-matching/output/ranking.png)
 
 ## Adding future assignments
 The repository is intentionally designed to grow. Add a new folder such as `assignments/assignment-03/`, give its questions descriptive names, add a short assignment README, and register its demos/tests in `scripts/validate_repository.py`.
