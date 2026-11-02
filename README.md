@@ -70,15 +70,17 @@ computer-vision-fundamentals-lab/
 │       ├── 02-nlm-denoising/
 │       └── 03-edge-detection/
 ├── chapter-labs/
-│   └── chapter-04-frequency-domain/
-│       ├── 01-fourier-transform/
-│       ├── 02-fourier-spectrum-explorer/
-│       ├── 03-fourier-properties/
-│       ├── 04-low-pass-filters/
-│       ├── 05-high-pass-filters/
-│       ├── 06-homomorphic-filtering/
-│       ├── 07-notch-band-reject-filtering/
-│       └── 08-fft-template-matching/
+│   ├── chapter-04-frequency-domain/
+│   │   ├── 01-fourier-transform/
+│   │   ├── 02-fourier-spectrum-explorer/
+│   │   ├── 03-fourier-properties/
+│   │   ├── 04-low-pass-filters/
+│   │   ├── 05-high-pass-filters/
+│   │   ├── 06-homomorphic-filtering/
+│   │   ├── 07-notch-band-reject-filtering/
+│   │   └── 08-fft-template-matching/
+│   └── chapter-05-image-restoration/
+│       └── 01-noise-models-and-degradation/
 ├── docs/
 ├── scripts/
 ├── .github/workflows/
@@ -116,7 +118,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and all eight Fourier lab pytest suites. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
+By default this runs every assignment test suite against the committed outputs and all eight Fourier lab pytest suites and Chapter 05 Lab 01. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
 
 ## Run an experiment directly
 
@@ -162,6 +164,10 @@ See the assignment-level READMEs for the purpose, algorithms, and main findings 
 **[Chapter 04 · Lab 08: FFT-Based Template Matching](chapter-labs/chapter-04-frequency-domain/08-fft-template-matching/README.md)** — practical valid-region correlation, stable normalized matching, top-left localization and ambiguous/failure cases.
 
 ![Different matching objectives give different rankings](chapter-labs/chapter-04-frequency-domain/08-fft-template-matching/output/ranking.png)
+
+**[Chapter 05 · Lab 01: Noise Models and Image Degradation](chapter-labs/chapter-05-image-restoration/01-noise-models-and-degradation/README.md)** — six course noise models, explicit PSF and boundary conventions, periodic interference and independent statistical/artifact validation. No restoration filters are introduced.
+
+![Noise models on an original synthetic scene](chapter-labs/chapter-05-image-restoration/01-noise-models-and-degradation/output/models.png)
 
 ## Adding future assignments
 The repository is intentionally designed to grow. Add a new folder such as `assignments/assignment-03/`, give its questions descriptive names, add a short assignment README, and register its demos/tests in `scripts/validate_repository.py`.
