@@ -23,6 +23,7 @@ The core algorithms are implemented directly; Pillow is used for image I/O, Matp
 | Homomorphic filtering | Log-domain illumination correction with explicit numerical limits | Known reflectance, scale-aware metrics and noise sensitivity |
 | Periodic-noise rejection | Paired ideal, Butterworth and Gaussian notches and radial band rejection | Leakage, legitimate-texture damage and detector false positives |
 | FFT template matching | Direct/FFT valid correlation, stable ZNCC and deterministic localization | Brightness distractors, ambiguity, padding and precision-sensitive cases |
+| Mean restoration filters | Arithmetic, geometric, harmonic and contraharmonic means | Quantified noise suppression, Q failures, thin-feature loss and boundary bias |
 
 ## Selected results
 
@@ -80,7 +81,8 @@ computer-vision-fundamentals-lab/
 │   │   ├── 07-notch-band-reject-filtering/
 │   │   └── 08-fft-template-matching/
 │   └── chapter-05-image-restoration/
-│       └── 01-noise-models-and-degradation/
+│       ├── 01-noise-models-and-degradation/
+│       └── 02-mean-filters/
 ├── docs/
 ├── scripts/
 ├── .github/workflows/
@@ -118,7 +120,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and all eight Fourier lab pytest suites and Chapter 05 Lab 01. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
+By default this runs every assignment test suite against the committed outputs and all eight Fourier lab pytest suites and Chapter 05 Labs 01–02. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
 
 ## Run an experiment directly
 
@@ -168,6 +170,10 @@ See the assignment-level READMEs for the purpose, algorithms, and main findings 
 **[Chapter 05 · Lab 01: Noise Models and Image Degradation](chapter-labs/chapter-05-image-restoration/01-noise-models-and-degradation/README.md)** — six course noise models, explicit PSF and boundary conventions, periodic interference and independent statistical/artifact validation. No restoration filters are introduced.
 
 ![Noise models on an original synthetic scene](chapter-labs/chapter-05-image-restoration/01-noise-models-and-degradation/output/models.png)
+
+**[Chapter 05 · Lab 02: Mean Filters](chapter-labs/chapter-05-image-restoration/02-mean-filters/README.md)** — arithmetic, geometric, harmonic and stable contraharmonic means with explicit zero limits, Q mismatch, blur/detail and boundary diagnostics.
+
+![Mean-filter quality and limitations](chapter-labs/chapter-05-image-restoration/02-mean-filters/output/quantitative.png)
 
 ## Adding future assignments
 The repository is intentionally designed to grow. Add a new folder such as `assignments/assignment-03/`, give its questions descriptive names, add a short assignment README, and register its demos/tests in `scripts/validate_repository.py`.
