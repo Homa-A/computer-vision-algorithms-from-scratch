@@ -82,7 +82,8 @@ computer-vision-fundamentals-lab/
 │   │   └── 08-fft-template-matching/
 │   └── chapter-05-image-restoration/
 │       ├── 01-noise-models-and-degradation/
-│       └── 02-mean-filters/
+│       ├── 02-mean-filters/
+│       └── 03-order-statistic-filters/
 ├── docs/
 ├── scripts/
 ├── .github/workflows/
@@ -120,7 +121,7 @@ Run this from the repository root after creating `.venv`. If PowerShell executio
 python scripts/validate_repository.py
 ```
 
-By default this runs every assignment test suite against the committed outputs and all eight Fourier lab pytest suites and Chapter 05 Labs 01–02. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
+By default this runs every assignment test suite against the committed outputs and all eight Fourier lab pytest suites and Chapter 05 Labs 01–03. To regenerate all experiment outputs first, use `python scripts/validate_repository.py --regenerate` in a disposable checkout.
 
 ## Run an experiment directly
 
@@ -174,6 +175,10 @@ See the assignment-level READMEs for the purpose, algorithms, and main findings 
 **[Chapter 05 · Lab 02: Mean Filters](chapter-labs/chapter-05-image-restoration/02-mean-filters/README.md)** — arithmetic, geometric, harmonic and stable contraharmonic means with explicit zero limits, Q mismatch, blur/detail and boundary diagnostics.
 
 ![Mean-filter quality and limitations](chapter-labs/chapter-05-image-restoration/02-mean-filters/output/quantitative.png)
+
+**[Chapter 05 · Lab 03: Order-Statistic Filters](chapter-labs/chapter-05-image-restoration/03-order-statistic-filters/README.md)** — five fixed-window filters, independent sorted-neighborhood references, impulse-density failures and detail-preservation measurements.
+
+![Order-statistic comparisons](chapter-labs/chapter-05-image-restoration/03-order-statistic-filters/output/quantitative.png)
 
 ## Adding future assignments
 The repository is intentionally designed to grow. Add a new folder such as `assignments/assignment-03/`, give its questions descriptive names, add a short assignment README, and register its demos/tests in `scripts/validate_repository.py`.

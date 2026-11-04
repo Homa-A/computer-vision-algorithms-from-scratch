@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "path": "boundaries.csv",
+      "canonical_bytes": 4649,
+      "sha256": "61cb4f571da64868cc13bcc36c593c0da44bc4025e1b5f5bb4895bce6d4f26f4",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "boundaries.png",
+      "canonical_bytes": 108610,
+      "sha256": "4fbf0ad7bde177f3f929332cb514a4587e97ba7f3348a7426915003c45c79abb",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "calibration.csv",
+      "canonical_bytes": 22353,
+      "sha256": "2577fffb027fc65754b8c4e78f69a3d8123cc65d0509f5da8c27970b27fe7393",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "combined.png",
+      "canonical_bytes": 137338,
+      "sha256": "404ed17e0a451ccd22412940a7f94d85640bbf169055facb715a0b2d732bbee9",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "density.csv",
+      "canonical_bytes": 20569,
+      "sha256": "d709dee58daaab224248c6d6e424a50e20fdfa06994dcbe29c12b1e22399a076",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "density_failure.png",
+      "canonical_bytes": 124271,
+      "sha256": "dd3e4828286903e9b1ff1ac5d4d5feb57788cd049487260ce91629e2dcb22eed",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "details.png",
+      "canonical_bytes": 215247,
+      "sha256": "6a1de771af34fee8ba47520f74897743486ddb4c679deb1fea283e1f1d678556",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "main.csv",
+      "canonical_bytes": 22317,
+      "sha256": "ff22874de5e4c3aa27f61b9b85bbe211b13f698f9610e727de2eeb4ddffb2155",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "mean_comparison.png",
+      "canonical_bytes": 125605,
+      "sha256": "cbd01fd4d60b7841441b45332f84acef0c84e726f7f1cc1474f0e9429e39b99d",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "median_impulses.png",
+      "canonical_bytes": 98554,
+      "sha256": "db46ac3b3d25c0cbbf2188459dd4be28834fcf7d9ee6a67185f7a79a123d0537",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "metrics.json",
+      "canonical_bytes": 278981,
+      "sha256": "fa9aec924f94607d452475517fde6040b714c190d20bf374fad8c3c249d85f05",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "midpoint_uniform.png",
+      "canonical_bytes": 148276,
+      "sha256": "6fc5ce3808a4cf3e0a8d411f16245d54ac9afc01a582dc28afc3f74869418f08",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "min_max.png",
+      "canonical_bytes": 101492,
+      "sha256": "28b2ee04a824ff956927983ce7b2c63b74830c8804cd2db5bb95f5c7ca83d833",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "overview.png",
+      "canonical_bytes": 111466,
+      "sha256": "1e54f7e14ef1dea1aacc94ca4ca6b5ffdbc599462d3c9e67e337e94129bd3e2a",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "quantitative.png",
+      "canonical_bytes": 109887,
+      "sha256": "652c52d25d1cca128662c13e6359aaebb58ac75ead13db18892008abf902faaa",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "reference_arrays.npz",
+      "canonical_bytes": 1908753,
+      "sha256": "6e1fbe720eeb10dde0c562653aeef7c2e6920a070677654760e4c931fdba1646",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "stress.csv",
+      "canonical_bytes": 3530,
+      "sha256": "2d641b95b6cec650dc0c5656b70ecc89edb54fd4af9496c65679c27f37e6f4d9",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "trim.csv",
+      "canonical_bytes": 12898,
+      "sha256": "f086ca40937fa637d381d3d9b888e807e4ab3235855ed4a439f8819c06be414a",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "trim_sweep.png",
+      "canonical_bytes": 120754,
+      "sha256": "bb5e6722f514cb77b9b0232f2774ebeb661f89532e43bf782ab6288fd8fa375f",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "windows.csv",
+      "canonical_bytes": 14656,
+      "sha256": "168e8c86cb03a124c61a3e5016762658491eadbee80a38d30de33981f4c2a639",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "windows.png",
+      "canonical_bytes": 97611,
+      "sha256": "395045c826635fdc37f72eb30e99606800a906b5da79e8d1c73e042d3a0d120a",
+      "policy": "raw-binary"
+    }
+  ]
+}
