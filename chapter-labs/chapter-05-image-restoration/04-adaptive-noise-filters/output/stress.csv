@@ -1,0 +1,13 @@
+case,group,id,max_absolute_error,max_relative_error,params
+zero,stress,stress_zero_local,0.0,0.0,"{""cval"": 0.0, ""factor"": 1.0, ""method"": ""local"", ""mode"": ""reflect"", ""noise_variance"": 0.0025, ""regularization"": ""clipped"", ""variance_source"": ""oracle"", ""window"": [1, 3]}"
+zero,stress,stress_zero_adaptive_median,0.0,0.0,"{""cval"": 0.0, ""initial_size"": 3, ""max_size"": 5, ""method"": ""adaptive_median"", ""mode"": ""reflect""}"
+negative,stress,stress_negative_local,0.0,0.0,"{""cval"": 0.0, ""factor"": 1.0, ""method"": ""local"", ""mode"": ""reflect"", ""noise_variance"": 0.0025, ""regularization"": ""clipped"", ""variance_source"": ""oracle"", ""window"": [1, 3]}"
+negative,stress,stress_negative_adaptive_median,0.0,0.0,"{""cval"": 0.0, ""initial_size"": 3, ""max_size"": 5, ""method"": ""adaptive_median"", ""mode"": ""reflect""}"
+huge,stress,stress_huge_local,0.0,0.0,"{""cval"": 0.0, ""factor"": 1.0, ""method"": ""local"", ""mode"": ""reflect"", ""noise_variance"": 0.0025, ""regularization"": ""clipped"", ""variance_source"": ""oracle"", ""window"": [1, 3]}"
+huge,stress,stress_huge_adaptive_median,0.0,0.0,"{""cval"": 0.0, ""initial_size"": 3, ""max_size"": 5, ""method"": ""adaptive_median"", ""mode"": ""reflect""}"
+near,stress,stress_near_local,0.0,0.0,"{""cval"": 0.0, ""factor"": 1.0, ""method"": ""local"", ""mode"": ""reflect"", ""noise_variance"": 0.0025, ""regularization"": ""clipped"", ""variance_source"": ""oracle"", ""window"": [1, 3]}"
+near,stress,stress_near_adaptive_median,0.0,0.0,"{""cval"": 0.0, ""initial_size"": 3, ""max_size"": 5, ""method"": ""adaptive_median"", ""mode"": ""reflect""}"
+tiny,stress,stress_tiny_local,0.0,0.0,"{""cval"": 0.0, ""factor"": 1.0, ""method"": ""local"", ""mode"": ""reflect"", ""noise_variance"": 0.0025, ""regularization"": ""clipped"", ""variance_source"": ""oracle"", ""window"": [1, 3]}"
+tiny,stress,stress_tiny_adaptive_median,0.0,0.0,"{""cval"": 0.0, ""initial_size"": 3, ""max_size"": 5, ""method"": ""adaptive_median"", ""mode"": ""reflect""}"
+ties,stress,stress_ties_local,1.734723475976807e-18,4.625929269271486e-16,"{""cval"": 0.0, ""factor"": 1.0, ""method"": ""local"", ""mode"": ""reflect"", ""noise_variance"": 0.0025, ""regularization"": ""clipped"", ""variance_source"": ""oracle"", ""window"": [1, 3]}"
+ties,stress,stress_ties_adaptive_median,0.0,0.0,"{""cval"": 0.0, ""initial_size"": 3, ""max_size"": 5, ""method"": ""adaptive_median"", ""mode"": ""reflect""}"

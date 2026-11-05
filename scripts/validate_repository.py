@@ -72,6 +72,11 @@ def main() -> int:
     if args.regenerate:
         run([sys.executable, "experiment.py"], lab_dir)
     run([sys.executable, "-m", "pytest", "-q", "tests"], lab_dir)
+    lab_dir = ROOT / "chapter-labs/chapter-05-image-restoration/04-adaptive-noise-filters"
+    print("\nChapter 05 / Lab 04 / Adaptive noise filters", flush=True)
+    if args.regenerate:
+        run([sys.executable, "experiment.py"], lab_dir)
+    run([sys.executable, "-m", "pytest", "-q", "tests"], lab_dir)
     print("\nAll repository validations passed.")
     return 0
 

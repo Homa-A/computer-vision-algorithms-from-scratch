@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "path": "boundary.csv",
+      "canonical_bytes": 3066,
+      "sha256": "3ac74c3b8a7007c96da72ab9381758706a65e50aa928e0f08842be1b77fae74b",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "calibration.csv",
+      "canonical_bytes": 5810,
+      "sha256": "bb1921eda9a1f4d1d660f017dd30dcaccdb0295c8953001afbe080512b762002",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "decisions.png",
+      "canonical_bytes": 121426,
+      "sha256": "6be8c7ae19a13db3ebd3fc364a522830a91cdba479e278a6c7872c2ca295afe3",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "density.csv",
+      "canonical_bytes": 36122,
+      "sha256": "da9b1cc3eddf288f014b675960e5e68a9f82a56689840475f2d7271b2a97fe42",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "details.png",
+      "canonical_bytes": 118754,
+      "sha256": "5674c19ae555f9a105f32809ea814a28dd8643bb3007e5ec17d144b23b127404",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "gaussian.png",
+      "canonical_bytes": 119555,
+      "sha256": "87b46f9d9b838ae433482d1fcf1b645f1e68981d7c9fc03cfce021605027a92c",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "high_density.png",
+      "canonical_bytes": 100362,
+      "sha256": "d4ff1337be093b34acf723fd6517b8c6845738ad5b182ae26da72f8d0f04cb5e",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "local_statistics.png",
+      "canonical_bytes": 88800,
+      "sha256": "b051fde26fc1b39a9e9c642ce34d53f45d27c57070a3a3623646fe7177f9c8b9",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "main.csv",
+      "canonical_bytes": 36385,
+      "sha256": "7313e7336346371e69c2b8ef30f0ee8d6d6b158ec193393d7465cc4de5a90c88",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "max_size.png",
+      "canonical_bytes": 193094,
+      "sha256": "0afce61314857f5a960a3d1e61a9eb459d56eaa355347711774d2086f2e358b3",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "median_comparison.png",
+      "canonical_bytes": 153334,
+      "sha256": "511140a867bb11ed71fab1435265fbd441c1c95110dce0454d41e61ae28598f0",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "metrics.json",
+      "canonical_bytes": 228730,
+      "sha256": "d3c50a04a7428464d2fc17a34a554ffa7c8a5c7fc5971e7de55df9edd07a3914",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "mismatch.png",
+      "canonical_bytes": 114419,
+      "sha256": "849a6cc90389192e5f96a70eef68a4658221532dcbd06d62a2103aa1cad06331",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "overview.png",
+      "canonical_bytes": 122463,
+      "sha256": "2edda7ea2110b9766130638f1723ac058f510e02913efdf99790d65c8b057b87",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "quantitative.png",
+      "canonical_bytes": 146386,
+      "sha256": "07875f4c141f185882843899201c8f5fdd18cc47101a10b9e6e69df995361ace",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "reference_arrays.npz",
+      "canonical_bytes": 2907756,
+      "sha256": "21d4c2ce0b07ac74ac5132b65939abbffed1da6ceab8ddeed2df84f185bd6edd",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "stress.csv",
+      "canonical_bytes": 2469,
+      "sha256": "e73f9fdcfaf6deaaf501d497b31da37fec65d51cb0da1b058845148bd1a56a7d",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "variance.csv",
+      "canonical_bytes": 7773,
+      "sha256": "9995d78ce17814b2375835019bdb6b5bc8dac4f10fc645dd7b779182b506c892",
+      "policy": "utf8-crlf-to-lf"
+    },
+    {
+      "path": "variance_estimates.png",
+      "canonical_bytes": 144719,
+      "sha256": "7b783d1948b9c8fbc42a66405c970f0e90dad297edb0c84cf7e16a72f5ed0cd2",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "variance_sweep.png",
+      "canonical_bytes": 104565,
+      "sha256": "0975bf291e7f680c9509971122faa3def68a5c32ca8c187ba35144aad7bf233b",
+      "policy": "raw-binary"
+    },
+    {
+      "path": "windows.csv",
+      "canonical_bytes": 5930,
+      "sha256": "b0cb1b18e80f49228e618b3a989581bfd755e527077a95f99bfe0fdddaf6fcca",
+      "policy": "utf8-crlf-to-lf"
+    }
+  ]
+}
